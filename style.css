@@ -15,6 +15,8 @@
 .container {
     max-width: 1298px;
     margin: 0 auto;
+    position: relative;
+
 }
 
 .about,
@@ -163,8 +165,10 @@
 }
 
 .basket {
+    position: absolute;
     margin-top: 15px;
-    margin-left: 50px;
+    left: auto;
+    right: 0;
     width: 138px;
     height: 48px;
     background: #728153;
