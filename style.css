@@ -38,12 +38,12 @@
 
 /*-----Шапка страницы с корзиной-----*/
 
-.main-hat {
-    position: fixed;
+.stiky {
+    position: sticky;
     top: 0;
     z-index: 1;
-    margin-top: 55px;
-    margin-bottom: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
 }
 
 .logo {
@@ -228,7 +228,6 @@
 }
 
 .content {
-    margin-top: 119px;
     background: #E5E5E5;
     height: 100vh;
     position: relative;
@@ -418,10 +417,9 @@ figcaption {
     right: 0;
     top: 0px;
     background: #ECF5F8;
-    position: absolute;
     cursor: pointer;
 }
-.header .show-menu {
+.stiky .show-menu {
     background-color: #FFFFFF;
     display: block;
     left: 90px;
@@ -430,7 +428,7 @@ figcaption {
     margin-left: 10px;
 }
 
-.header .show-menu li a {
+.stiky .show-menu li a {
     color: #344f50;
 }
 .menu-close {
@@ -509,7 +507,6 @@ article.slider>div:not(:last-child) {
     }
     .basket {
         display: flex;
-        position: absolute;
         right: 0;
     }
     .menu {
@@ -528,6 +525,7 @@ article.slider>div:not(:last-child) {
  
 @media screen and (max-width: 680px) {
     .container {
+        position: relative;
         width: 480px;
     }
     .nav__top, .search, .open {
@@ -585,6 +583,7 @@ article.slider>div:not(:last-child) {
         margin-left: -215%;
     }
     .basket {
+        position: absolute;
         width: 127px;
         height: 79px;
         left: 206px;
@@ -595,7 +594,7 @@ article.slider>div:not(:last-child) {
         padding: 15px 37px 20px;
     }
     .logo {
-        margin: 10px 0;
+        margin: 10px 100.63px 10px 0;
     }
     .basket__price {
         margin: 0;
@@ -610,16 +609,17 @@ article.slider>div:not(:last-child) {
         padding-top: 36px;
     }
     .basket__hidden {
-        display: block;
+        display: inline-block;
     }
     .basket__look {
         display: none;
     }
     .menu-hidden {
-        display: block;
+        display: inline-block;
+        position: absolute;
     }
     .basket {
-        right: 127px;
+        right: 126.44px;
         left: auto;
     }
     .sale__name {
@@ -640,11 +640,8 @@ article.slider>div:not(:last-child) {
     .slider {
         transition: 8000ms linear;
     }
-    .content {
-        margin-top: 80px;
-    }
-    .main-hat {
-        margin: 0;
+    .stike {
+        display: flex;
     }
 }
 
