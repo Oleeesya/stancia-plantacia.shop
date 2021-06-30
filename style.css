@@ -36,6 +36,7 @@
 
 .menu li {
     margin: 0 60px 0 0;
+    word-spacing: 0.5px;
 }
 
 /*-----Шапка страницы с корзиной-----*/
@@ -49,8 +50,8 @@
 }
 
 .logo {
-    margin-right: 57.63px;
-    margin-top: 12.94px;
+    margin-right: 52px;
+    margin-top: 11px;
 }
 
 .mail {
@@ -59,7 +60,7 @@
 }
 
 .menu-open {
-    padding: 16px 15px;
+    padding: 14px 14px;
     background: #F2721B;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
     border-radius: 3px 0px 0px 3px;
@@ -73,11 +74,11 @@
 }
 
 .vector {
-    padding-left: 22px;
+    padding-left: 31px;
 }
 
 #search {
-    padding: 17px 166px 17px 20px;
+    padding: 16px 1px 13px 18px;
     vertical-align: middle;
     margin-top: 15px;
     font-family: 'Raleway', sans-serif;
@@ -87,7 +88,7 @@
     line-height: 14px;
     color: #9A9A9A;
     text-overflow: ellipsis;
-    width: 470px;
+    width: 465px;
     outline: none;
 }
 
@@ -98,7 +99,7 @@
 .search::after {
     content: url(img/Vector2.png);
     position: absolute;
-    margin: 33px -34.09px;
+    margin: 30px -37px;
 }
 
 .search:checked {
@@ -106,7 +107,7 @@
 }
 
 .tel-schedule {
-    margin: 19px 53px 0 60px;
+    margin: 19px 53px 0 68px;
 }
 
 .schedule {
@@ -155,6 +156,7 @@
     font-size: 14px;
     line-height: 16px;
     margin-left: 10px;
+    margin-bottom: 5px;
     border: none;
     background-color: #FFFFFF;
 }
@@ -169,7 +171,6 @@
     margin-top: 15px;
     left: auto;
     right: 0;
-    width: 138px;
     height: 48px;
     background: #728153;
     border-radius: 3px;
@@ -177,7 +178,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 15px 23px;
+    padding: 15px 21px;
 }
 
 .basket__price {
@@ -193,7 +194,7 @@
 
 .basket__price::after {
     content: "\20BD";
-    margin-left: 3px;
+    margin-left: 4.5px;
 }
 .put_basket__text-hidden {
     display: none;
@@ -203,13 +204,18 @@
 .sale {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 33px;
+    margin-left: 0.4px;
+    word-spacing: 1.26px;
 }
 
 .sale__img {
     margin-right: 20px;
     width: 50px;
     height: 2px;
+}
+.line__hidden {
+    display: none;
 }
 
 .sale__name {
@@ -239,7 +245,7 @@
 
 .container_hidden {
     overflow: hidden;
-    margin-top: 51px;
+    margin-top: 50.2px;
 }
 
 .container_hidden input {
@@ -291,10 +297,10 @@ figure {
 
 .discount {
     position: absolute;
-    left: 5.16%;
+    left: 4.6%;
     right: 70.97%;
-    top: 3.42%;
-    bottom: 88.89%;
+    top: 3.1%;
+    bottom: 89%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,7 +320,7 @@ figure {
 /*-----Наименования и описания продуктов-----*/
 
 figcaption {
-    padding: 0 20px 26px;
+    padding: 0 20px 23px;
 }
 
 .name__product {
@@ -326,19 +332,23 @@ figcaption {
     display: flex;
     align-items: center;
     color: #000000;
-    margin-top: 24px;
+    margin-top: 33.3px;
+    margin-left: -0.58px;
 }
 
 .name__product-other {
-    margin-top: 3.5px;
+    margin-top: 22.1px;
 }
 .name__product-hidden-media {
+    display: none;
+}
+.w-480-look {
     display: none;
 }
 
 .price__product {
     display: flex;
-    margin-top: 20px;
+    margin-top: 28px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -347,15 +357,29 @@ figcaption {
     text-align: right;
     color: #F2721B;
     align-items: center;
+    margin-left: -1px;
 }
 
 .old__price {
-    margin-left: 9px;
+    margin-left: 11px;
+    margin-top: 3px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    text-decoration-line: line-through;
+    color: #B3B3B3;
 }
 
 .new__price::after {
     content: "\20BD";
-    margin-left: 5px;
+    margin-left: 7.5px;
+}
+
+.price__product-other {
+    margin-top: 18px;
 }
 
 .like__checkbox:checked,
@@ -371,6 +395,10 @@ figcaption {
     margin-top: 25px;
 }
 
+.like-btn-other {
+    margin-top: 25px;
+}
+
 .favorites {
     display: flex;
     align-items: center;
@@ -381,15 +409,16 @@ figcaption {
     cursor: pointer;
     background-repeat: no-repeat;
     padding: 15px;
+    margin-left: -2px;
 }
 
 .put-basket {
-    padding: 15px 30.5px;
+    padding: 15.9px 31.1px;
     background: linear-gradient(0deg, #F2721B, #F2721B);
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 21px;
 }
 
 .put_basket__text {
@@ -531,6 +560,13 @@ article.slider>div:not(:last-child) {
     .container {
         position: relative;
         width: 480px;
+        margin: 0 20px 0 21px;
+    }
+    .content {
+        background-color: #FFFFFF;
+    }
+    .slider__container {
+        height: 209px;
     }
     .nav__top, .search, .open {
         display: none;
@@ -540,13 +576,14 @@ article.slider>div:not(:last-child) {
         margin-left: 20px;
     }
     .logo {
-        margin: 13px 0 12px 20px;
+        margin: 13px 0 12px ;
     }
     .active>label:first-child {
         margin-right: 10px;
     } 
     .active {
-        margin-right: 20px;
+        margin-right: 34px;
+        margin-top: 7px;
     }
    figcaption {
         float: right;
@@ -557,8 +594,14 @@ article.slider>div:not(:last-child) {
    figure {
        flex-direction: row;
    }
+   .favorites {
+       margin-left: -9px;
+   }
    .put-basket {
-       width: 141px;
+       width: 141.7px;
+       margin-left: 19px;
+       padding-top: 13.9px;
+       margin-top: -3px;
    }
    .put_basket__text-hidden {
         display: inline-block;
@@ -572,8 +615,15 @@ article.slider>div:not(:last-child) {
         border-radius: 5px;
     }
     .discount {
-        padding: 7px 22.37px;
-        display: inline-table;
+        padding: 17px 47.5px;
+        display: inline-flex;
+        top: 16px;
+        left: 11%;
+        margin-left: -31.5px;
+        right: 78%;
+    }
+    .discount__percent {
+        margin-left: -10px;
     }
     .name__product-hidden {
         display: none;
@@ -582,26 +632,29 @@ article.slider>div:not(:last-child) {
         display: inline-block;
         font-size: 16px;
         line-height: 19px;
+        margin-top: 28px;
+        margin-left: -10px;
     }
-    #maket__2:checked~.slider {
-        margin-left: -215%;
+    .foto {
+        width: 208px;
+        height: 207px;
+        margin-right: 70px;
     }
     .basket {
         position: absolute;
         width: 127px;
-        height: 79px;
-        left: 206px;
+        height: 80px;
         top: 0px;
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 15px 37px 20px;
-    }
-    .logo {
-        margin: 10px 100.63px 10px 0;
+        right: 168px;
+        left: auto;
     }
     .basket__price {
-        margin: 0;
+        margin-left: -2px;
+        line-height: 22px;
     }
     .content, .sale{
         margin-top: 0;
@@ -614,6 +667,7 @@ article.slider>div:not(:last-child) {
     }
     .basket__hidden {
         display: inline-block;
+        margin-bottom: 6px;
     }
     .basket__look {
         display: none;
@@ -621,31 +675,55 @@ article.slider>div:not(:last-child) {
     .menu-hidden {
         display: inline-block;
         position: absolute;
+        margin-right: 41.5px;
+        padding: 17px 43.5px 20px;
     }
-    .basket {
-        right: 126.44px;
-        left: auto;
+    .menu-hidden__name {
+        padding-top: 6px;
+    }
+    .old__price {
+        margin-top: 0;
+    }
+
+    .basket__price::after {
+        margin-left: 5px;
     }
     .sale__name {
         font-size: 24px;
         line-height: 28px;
         display: flex;
         align-items: center;
+        margin-left: 13px;
     }
     .sale__img {
         margin-left: 0;
+        display: none;
+    }
+    .line__hidden {
+        display: inline-block;
     }
     article.slider>div:not(:last-child) {
         margin-right: 50px;
     }
     #maket__2:checked~.slider {
-        margin-left: -332%;
+        margin-left: 0%;
     }
     .slider {
         transition: 8000ms linear;
     }
     .stike {
         display: flex;
+    }
+    .active>label:first-child {
+        background: url(img/Group\ 31\ \(1\).png) no-repeat;
+    }
+    
+    .active>label:last-child {
+        background: url(img/Group\ 32\ \(1\).png) no-repeat;
+    }
+    .price__product {
+        margin-top: 19.2px;
+        margin-left: -10px;
     }
 }
 
