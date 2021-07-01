@@ -78,7 +78,7 @@
 }
 
 #search {
-    padding: 16px 1px 13px 18px;
+    padding: 16px 1px 13.5px 18px;
     vertical-align: middle;
     margin-top: 15px;
     font-family: 'Raleway', sans-serif;
@@ -90,6 +90,7 @@
     text-overflow: ellipsis;
     width: 465px;
     outline: none;
+    word-spacing: -0.2px;
 }
 
 .search {
@@ -318,7 +319,9 @@ figure {
 }
 
 /*-----Наименования и описания продуктов-----*/
-
+    .foto-water {
+    display: none;
+}
 figcaption {
     padding: 0 20px 23px;
 }
@@ -562,9 +565,6 @@ article.slider>div:not(:last-child) {
         width: 480px;
         margin: 0 20px 0 21px;
     }
-    .content {
-        background-color: #FFFFFF;
-    }
     .slider__container {
         height: 209px;
     }
@@ -576,6 +576,7 @@ article.slider>div:not(:last-child) {
         margin-left: 20px;
     }
     .logo {
+        height: 55px;
         margin: 13px 0 12px ;
     }
     .active>label:first-child {
@@ -615,7 +616,7 @@ article.slider>div:not(:last-child) {
         border-radius: 5px;
     }
     .discount {
-        padding: 17px 47.5px;
+        padding: 18px 45.5px;
         display: inline-flex;
         top: 16px;
         left: 11%;
@@ -634,6 +635,7 @@ article.slider>div:not(:last-child) {
         line-height: 19px;
         margin-top: 28px;
         margin-left: -10px;
+        word-spacing: -0.1px;
     }
     .foto {
         width: 208px;
@@ -642,22 +644,30 @@ article.slider>div:not(:last-child) {
     }
     .basket {
         position: absolute;
+        justify-content: space-between;
         width: 127px;
-        height: 80px;
+        height: 81px;
         top: 0px;
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 15px 37px 20px;
+        padding: 13px 37px 21.8px;
         right: 168px;
         left: auto;
+        border: none;
     }
     .basket__price {
-        margin-left: -2px;
-        line-height: 22px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        margin-left: -0.5px;
+        line-height: 16px;
+        margin-top: -4.5px;
     }
     .content, .sale{
-        margin-top: 0;
+        margin-top: 2.5px;
+        word-spacing: 0.7px;
+        padding-top: 1.2px;
     }
     .container_hidden {
         margin-top: 46px;
@@ -667,7 +677,9 @@ article.slider>div:not(:last-child) {
     }
     .basket__hidden {
         display: inline-block;
-        margin-bottom: 6px;
+        margin-bottom: 7.5px;
+        width: 22.03px;
+        height: 22.03px;
     }
     .basket__look {
         display: none;
@@ -676,10 +688,11 @@ article.slider>div:not(:last-child) {
         display: inline-block;
         position: absolute;
         margin-right: 41.5px;
-        padding: 17px 43.5px 20px;
+        padding: 17px 43.5px 21.5px;
+        border: none;
     }
     .menu-hidden__name {
-        padding-top: 6px;
+        padding-top: 5.4px;
     }
     .old__price {
         margin-top: 0;
@@ -724,6 +737,15 @@ article.slider>div:not(:last-child) {
     .price__product {
         margin-top: 19.2px;
         margin-left: -10px;
+    }
+    .w-nav-480 {
+        margin-bottom: -2px;
+    }
+    .foto-water-hidden {
+        display: none;
+    }
+    .foto-water {
+        display: inline-block;
     }
 }
 
