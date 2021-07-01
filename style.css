@@ -620,7 +620,7 @@ article.slider>div:not(:last-child) {
         display: inline-flex;
         top: 16px;
         left: 11%;
-        margin-left: -31.5px;
+        margin-left: -30px;
         right: 78%;
     }
     .discount__percent {
